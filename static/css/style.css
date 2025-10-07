@@ -1,0 +1,38 @@
+/* Responsif untuk layar besar */
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding: 0 5rem;
+  }
+  .BeratBadan {
+    width: 300px;
+  }
+}
+
+/* Responsif untuk layar sedang */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container-fluid {
+    padding: 0 3rem;
+  }
+  .BeratBadan {
+    width: 250px;
+  }
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 767px) {
+  .container-fluid {
+    padding: 0 1rem;
+  }
+  nav img {
+    margin-left: 0; /* Atur ulang margin logo */
+  }
+  .BeratBadan {
+    width: 100%;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .nav-item {
+    margin-bottom: 10px;
+  }
+}

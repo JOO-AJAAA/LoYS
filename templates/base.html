@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="{{ url_for('static', filename='iconStepWeb/Untitled.svg') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %}LoYS{% endblock %}</title>
+    {% block extra_css %}{% endblock %}
+  </head>
+  <body class="bg-success bg-opacity-75">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="{{ url_for('home') }}">
+          <img src="{{ url_for('static', filename='iconStepWeb/Untitled.svg') }}" alt="Logo" width="57px" class="me-2">
+          <h2 class="text-success mb-0">LoYS</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <button class="btn btn-link me-2" style="border: none; background: none;" data-bs-toggle="modal" data-bs-target="#tutorialModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-question-lg" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14"/>
+                </svg>
+              </button>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-link" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                <img src="{{ url_for('static', filename='iconStepWeb/option.svg') }}" alt="Option Icon" style="width: 30px; height: auto;">
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item " href="{{ url_for('home') }}">Calories Burned</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('obsityPredict') }}">Tes Obesitas</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('exercisePlan') }}">Rencanakan olaharaga</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
+
+    <!-- Tutorial Modal -->
+    <div class="modal fade" id="tutorialModal" tabindex="-1" aria-labelledby="tutorialModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h1 class="modal-title fs-5" id="tutorialModalLabel">Tutorial Penggunaan</h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-4">
+              <p class="badge bg-success fs-6 mb-2">Langkah Pertama</p>
+              <p class="ms-2">Tekan tombol "Pilih aktivitasnya 😊" terlebih dahulu</p>
+              <img src="{{ url_for('static', filename='iconStepWeb/langkaPertama.png') }}" alt="Langkah 1" class="img-fluid rounded shadow-sm mb-3">
+            </div>
+
+            <div class="mb-4">
+              <p class="badge bg-success fs-6 mb-2">Langkah Kedua</p>
+              <p class="ms-2">Cari kemudian pilih aktivitasnya dengan menekan tombol plus</p>
+              <p class="ms-3 text-muted">Cari Aktivitas terlebih dahulu</p>
+              <img src="{{ url_for('static', filename='iconStepWeb/langkahKedua.png') }}" alt="Langkah 2" class="img-fluid rounded shadow-sm mb-3">
+              <p class="ms-3 text-muted">Kemudian pilih aktivitas yang ingin ditambahkan</p>
+              <img src="{{ url_for('static', filename='iconStepWeb/langkaKetiga.png') }}" alt="Langkah 3" class="img-fluid rounded shadow-sm mb-3">
+            </div>
+
+            <div class="mb-4">
+              <p class="badge bg-success fs-6 mb-2">Langkah Ketiga</p>
+              <p class="ms-2">Masukkan berat badan Anda</p>
+              <img src="{{ url_for('static', filename='iconStepWeb/langkahKeempat.png') }}" alt="Langkah 4" class="img-fluid rounded shadow-sm mb-3">
+            </div>
+
+            <div class="mb-4">
+              <p class="badge bg-success fs-6 mb-2">Langkah Keempat</p>
+              <p class="ms-2">Masukkan inputan dari tiap kegiatan yang telah dipilih</p>
+              <img src="{{ url_for('static', filename='iconStepWeb/langkaKelima.png') }}" alt="Langkah 5" class="img-fluid rounded shadow-sm mb-3">
+            </div>
+
+            <div class="mb-4">
+              <p class="badge bg-success fs-6 mb-2">Langkah Kelima</p>
+              <p class="ms-2">Tekan tombol hitung dan akan muncul hasil</p>
+              <img src="{{ url_for('static', filename='iconStepWeb/langkahKeenam.png') }}" alt="Langkah 6" class="img-fluid rounded shadow-sm mb-3">
+            </div>
+
+            <div class="mb-4">
+              <p class="badge bg-danger fs-6 mb-2">Rumus untuk menghitung kalori yang keluar</p>
+              <img src="{{ url_for('static', filename='iconStepWeb/Rumus.png') }}" alt="Rumus" class="img-fluid rounded shadow-sm mb-3">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    {% block scriptjs %}{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,307 @@
+[
+  {
+    "Activity": "Jogging (5 mph)",
+    "MET": 8.0,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Running (6 mph)",
+    "MET": 10.0,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Running (8 mph)",
+    "MET": 11.5,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Walking (3 mph)",
+    "MET": 3.5,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Walking (4 mph)",
+    "MET": 5.0,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Cycling (10-12 mph)",
+    "MET": 6.0,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Cycling (12-14 mph)",
+    "MET": 8.0,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Cycling (14-16 mph)",
+    "MET": 10.0,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Swimming (freestyle, moderate)",
+    "MET": 8.0,
+    "Category": "Water Sports"
+  },
+  {
+    "Activity": "Swimming (freestyle, fast)",
+    "MET": 10.0,
+    "Category": "Water Sports"
+  },
+  {
+    "Activity": "Swimming (backstroke)",
+    "MET": 7.0,
+    "Category": "Water Sports"
+  },
+  {
+    "Activity": "Swimming (breaststroke)",
+    "MET": 10.0,
+    "Category": "Water Sports"
+  },
+  {
+    "Activity": "Basketball",
+    "MET": 6.5,
+    "Category": "Sports"
+  },
+  {
+    "Activity": "Soccer",
+    "MET": 7.0,
+    "Category": "Sports"
+  },
+  {
+    "Activity": "Tennis (singles)",
+    "MET": 8.0,
+    "Category": "Sports"
+  },
+  {
+    "Activity": "Tennis (doubles)",
+    "MET": 6.0,
+    "Category": "Sports"
+  },
+  {
+    "Activity": "Badminton",
+    "MET": 5.5,
+    "Category": "Sports"
+  },
+  {
+    "Activity": "Volleyball",
+    "MET": 4.0,
+    "Category": "Sports"
+  },
+  {
+    "Activity": "Boxing (sparring)",
+    "MET": 9.0,
+    "Category": "Combat Sports"
+  },
+  {
+    "Activity": "Boxing (punching bag)",
+    "MET": 6.0,
+    "Category": "Combat Sports"
+  },
+  {
+    "Activity": "Jump Rope (slow)",
+    "MET": 8.0,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Jump Rope (fast)",
+    "MET": 12.0,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Aerobics (low impact)",
+    "MET": 5.0,
+    "Category": "Fitness"
+  },
+  {
+    "Activity": "Aerobics (high impact)",
+    "MET": 7.0,
+    "Category": "Fitness"
+  },
+  {
+    "Activity": "Zumba",
+    "MET": 8.5,
+    "Category": "Fitness"
+  },
+  {
+    "Activity": "Yoga (hatha)",
+    "MET": 2.5,
+    "Category": "Mind-Body"
+  },
+  {
+    "Activity": "Yoga (power)",
+    "MET": 4.0,
+    "Category": "Mind-Body"
+  },
+  {
+    "Activity": "Pilates",
+    "MET": 3.0,
+    "Category": "Mind-Body"
+  },
+  {
+    "Activity": "Weight Training (light)",
+    "MET": 3.0,
+    "Category": "Strength"
+  },
+  {
+    "Activity": "Weight Training (moderate)",
+    "MET": 5.0,
+    "Category": "Strength"
+  },
+  {
+    "Activity": "Weight Training (vigorous)",
+    "MET": 6.0,
+    "Category": "Strength"
+  },
+  {
+    "Activity": "Push-ups",
+    "MET": 8.0,
+    "Category": "Calisthenics"
+  },
+  {
+    "Activity": "Sit-ups",
+    "MET": 8.0,
+    "Category": "Calisthenics"
+  },
+  {
+    "Activity": "Pull-ups",
+    "MET": 8.0,
+    "Category": "Calisthenics"
+  },
+  {
+    "Activity": "Squats",
+    "MET": 5.5,
+    "Category": "Calisthenics"
+  },
+  {
+    "Activity": "Plank",
+    "MET": 4.0,
+    "Category": "Calisthenics"
+  },
+  {
+    "Activity": "Burpees",
+    "MET": 8.0,
+    "Category": "Calisthenics"
+  },
+  {
+    "Activity": "Mountain Climbers",
+    "MET": 8.0,
+    "Category": "Calisthenics"
+  },
+  {
+    "Activity": "Hiking (uphill)",
+    "MET": 7.0,
+    "Category": "Outdoor"
+  },
+  {
+    "Activity": "Hiking (moderate)",
+    "MET": 6.0,
+    "Category": "Outdoor"
+  },
+  {
+    "Activity": "Rock Climbing",
+    "MET": 8.0,
+    "Category": "Outdoor"
+  },
+  {
+    "Activity": "Rowing Machine (moderate)",
+    "MET": 7.0,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Rowing Machine (vigorous)",
+    "MET": 8.5,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Elliptical Trainer",
+    "MET": 5.0,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Stair Climbing",
+    "MET": 8.0,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Dancing (slow)",
+    "MET": 3.0,
+    "Category": "Recreation"
+  },
+  {
+    "Activity": "Dancing (fast)",
+    "MET": 5.0,
+    "Category": "Recreation"
+  },
+  {
+    "Activity": "Martial Arts",
+    "MET": 10.0,
+    "Category": "Combat Sports"
+  },
+  {
+    "Activity": "Kickboxing",
+    "MET": 10.0,
+    "Category": "Combat Sports"
+  },
+  {
+    "Activity": "Skateboarding",
+    "MET": 5.0,
+    "Category": "Recreation"
+  },
+  {
+    "Activity": "Rollerblading",
+    "MET": 7.0,
+    "Category": "Recreation"
+  },
+  {
+    "Activity": "Golf (walking)",
+    "MET": 4.8,
+    "Category": "Sports"
+  },
+  {
+    "Activity": "Golf (using cart)",
+    "MET": 3.5,
+    "Category": "Sports"
+  },
+  {
+    "Activity": "Bowling",
+    "MET": 3.0,
+    "Category": "Recreation"
+  },
+  {
+    "Activity": "Tai Chi",
+    "MET": 3.0,
+    "Category": "Mind-Body"
+  },
+  {
+    "Activity": "Stretching",
+    "MET": 2.3,
+    "Category": "Flexibility"
+  },
+  {
+    "Activity": "HIIT (High Intensity Interval Training)",
+    "MET": 12.0,
+    "Category": "Fitness"
+  },
+  {
+    "Activity": "CrossFit",
+    "MET": 11.0,
+    "Category": "Fitness"
+  },
+  {
+    "Activity": "Spinning Class",
+    "MET": 8.5,
+    "Category": "Fitness"
+  },
+  {
+    "Activity": "Treadmill (jogging)",
+    "MET": 7.0,
+    "Category": "Cardio"
+  },
+  {
+    "Activity": "Treadmill (running)",
+    "MET": 9.0,
+    "Category": "Cardio"
+  }
+]

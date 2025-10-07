@@ -1,0 +1,95 @@
+/* ==================== CUSTOM STYLES ==================== */
+.exercise-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.exercise-card:hover {
+  border-color: #198754;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(25, 135, 84, 0.3);
+}
+
+.exercise-card:active {
+  transform: translateY(-2px);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(25, 135, 84, 0.1);
+}
+
+.table-primary {
+  background-color: rgba(13, 110, 253, 0.1) !important;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: slideIn 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .table {
+    font-size: 0.875rem;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.5rem 0.25rem;
+  }
+  
+  .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  .modal-xl {
+    max-width: 100%;
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .modal-header,
+  .modal-footer,
+  .btn {
+    display: none !important;
+  }
+  
+  .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  .modal-content {
+    border: none;
+    box-shadow: none;
+  }
+}
