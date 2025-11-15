@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from functionApp import preprocess,Mapping_NObeyesdad
-import joblib,pandas as pd
+import os,joblib,pandas as pd
 model = joblib.load("static/model/obesityPrediction.pkl")
 scaler, num_cols, cat_cols = joblib.load("static/model/scaler.pkl")
 
@@ -33,9 +33,3 @@ def exercisePlan():
 
 if __name__ == '__main__':
     app.run()
-    # # Pastikan folder static dan templates ada
-    # os.makedirs('static', exist_ok=True)
-    # os.makedirs('templates', exist_ok=True)
-    
-    # # Jalankan aplikasi
-    # app.run(debug=True, host='0.0.0.0', port=5000)
